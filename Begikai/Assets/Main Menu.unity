@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &11452812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1428,8 +1428,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.363, y: -68.854004}
-  m_SizeDelta: {x: 1097.3, y: 588.6813}
+  m_AnchoredPosition: {x: 23.363, y: -44.125}
+  m_SizeDelta: {x: 1097.3, y: 638.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364176435
 MonoBehaviour:
@@ -1452,9 +1452,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u017Daidimo tikslas: \n\u012Fveikti kli\u016Btis ir nub\u0117gti kiek
-    \u012Fmanoma didesn\u012F atstum\u0105.\n\n\n\nKontrol\u0117s:\nPirmasis \u017Eaid\u0117jas:    
+    \u012Fmanoma didesn\u012F atstum\u0105.\n\nKontrol\u0117s:\nPirmasis \u017Eaid\u0117jas:    
     W - \u0161okti        S - t\u016Bptis\nAntras \u017Eaid\u0117jas:         \u2191
-    - \u0161okti         \u2193 - t\u016Bptis"
+    - \u0161okti         \u2193 - t\u016Bptis\n\nK\u016Br\u0117jai:\nBombachos"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 30.37677, z: 0, w: 46.577744}
+  m_margin: {x: 0, y: 30.37677, z: 0, w: 0.1367036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
