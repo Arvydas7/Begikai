@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638467262254628817
-    m_Hash: 958026318
+      ticks: 638467999740448692
+    m_Hash: 212040095
   m_LockFileStatus:
     m_FilePath: C:/Users/Lietinis/Begikai/Begikai/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638467262794301947
-    m_Hash: 813641192
+      ticks: 638467999740448692
+    m_Hash: 868256399
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
