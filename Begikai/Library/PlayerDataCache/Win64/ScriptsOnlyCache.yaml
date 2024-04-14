@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - MainMenu
+    - PlayerMovement
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -62,6 +63,7 @@ ScriptsOnlyBuild:
     Unity.RenderPipelines.Universal.Editor.dll:
     - UnityEditor.Rendering.Universal.UniversalProjectSettings
     Unity.RenderPipelines.Universal.Runtime.dll:
+    - UnityEngine.Rendering.Universal.Light2D
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.Renderer2DData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
@@ -158,25 +160,49 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: MainMenu
+    methodName: ExitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
     methodName: PlayGameDuo
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Assembly-CSharp
     fullTypeName: MainMenu
     methodName: PlayGameSolo
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: OnScrollbarClicked
@@ -251,120 +277,124 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1772}
+      Script: {instanceID: 16852}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 16854}
     - Class: 114
-      Script: {instanceID: 1776}
+      Script: {instanceID: 16856}
     - Class: 114
-      Script: {instanceID: 1778}
+      Script: {instanceID: 16858}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 16860}
     - Class: 114
-      Script: {instanceID: 1788}
+      Script: {instanceID: 16868}
     - Class: 114
-      Script: {instanceID: 1818}
+      Script: {instanceID: 16898}
     - Class: 114
-      Script: {instanceID: 1926}
+      Script: {instanceID: 17006}
     - Class: 114
-      Script: {instanceID: 2264}
+      Script: {instanceID: 17344}
     - Class: 114
-      Script: {instanceID: 2478}
+      Script: {instanceID: 17558}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 17916}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 18370}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 18440}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 18578}
     - Class: 114
-      Script: {instanceID: 4034}
+      Script: {instanceID: 19114}
     - Class: 114
-      Script: {instanceID: 4782}
+      Script: {instanceID: 19862}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 19904}
     - Class: 114
-      Script: {instanceID: 4884}
+      Script: {instanceID: 19964}
     - Class: 114
-      Script: {instanceID: 4938}
+      Script: {instanceID: 20018}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 20172}
     - Class: 114
-      Script: {instanceID: 5108}
+      Script: {instanceID: 20188}
     - Class: 114
-      Script: {instanceID: 5568}
+      Script: {instanceID: 20648}
     - Class: 114
-      Script: {instanceID: 5574}
+      Script: {instanceID: 20654}
     - Class: 114
-      Script: {instanceID: 5636}
+      Script: {instanceID: 20716}
     - Class: 114
-      Script: {instanceID: 5732}
+      Script: {instanceID: 20812}
     - Class: 114
-      Script: {instanceID: 5810}
+      Script: {instanceID: 20890}
     - Class: 114
-      Script: {instanceID: 6160}
+      Script: {instanceID: 21240}
     - Class: 114
-      Script: {instanceID: 6212}
+      Script: {instanceID: 21292}
     - Class: 114
-      Script: {instanceID: 7018}
+      Script: {instanceID: 22098}
     - Class: 114
-      Script: {instanceID: 7914}
+      Script: {instanceID: 22994}
     - Class: 114
-      Script: {instanceID: 7976}
+      Script: {instanceID: 23056}
     - Class: 114
-      Script: {instanceID: 8110}
+      Script: {instanceID: 23190}
     - Class: 114
-      Script: {instanceID: 8222}
+      Script: {instanceID: 23302}
     - Class: 114
-      Script: {instanceID: 8294}
+      Script: {instanceID: 23374}
     - Class: 114
-      Script: {instanceID: 8476}
+      Script: {instanceID: 23556}
     - Class: 114
-      Script: {instanceID: 8810}
+      Script: {instanceID: 23890}
     - Class: 114
-      Script: {instanceID: 9102}
+      Script: {instanceID: 24182}
     - Class: 114
-      Script: {instanceID: 9168}
+      Script: {instanceID: 24248}
     - Class: 114
-      Script: {instanceID: 9408}
+      Script: {instanceID: 24488}
     - Class: 114
-      Script: {instanceID: 9492}
+      Script: {instanceID: 24572}
     - Class: 114
-      Script: {instanceID: 9518}
+      Script: {instanceID: 24598}
     - Class: 114
-      Script: {instanceID: 9732}
+      Script: {instanceID: 24812}
     - Class: 114
-      Script: {instanceID: 9802}
+      Script: {instanceID: 24882}
     - Class: 114
-      Script: {instanceID: 10412}
+      Script: {instanceID: 25492}
     - Class: 114
-      Script: {instanceID: 10460}
+      Script: {instanceID: 25540}
     - Class: 114
-      Script: {instanceID: 10646}
+      Script: {instanceID: 25726}
     - Class: 114
-      Script: {instanceID: 10884}
+      Script: {instanceID: 25964}
     - Class: 114
-      Script: {instanceID: 11168}
+      Script: {instanceID: 26250}
     - Class: 114
-      Script: {instanceID: 11294}
+      Script: {instanceID: 26376}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 26448}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 26458}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 26540}
     - Class: 114
-      Script: {instanceID: 11566}
+      Script: {instanceID: 26648}
     - Class: 114
-      Script: {instanceID: 11706}
+      Script: {instanceID: 26788}
     - Class: 114
-      Script: {instanceID: 11954}
+      Script: {instanceID: 27036}
     - Class: 114
-      Script: {instanceID: 12720}
+      Script: {instanceID: 27802}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -388,15 +418,45 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 23890}
+    - Class: 114
+      Script: {instanceID: 25436}
+    - Class: 114
+      Script: {instanceID: 26194}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1877,6 +1937,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: c4f7aa4afee49df8f0242af37e5c02dd
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
       Hash: b72839eb6e4350778dc879d98832aa2b
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
@@ -2114,4 +2180,4 @@ ScriptsOnlyBuild:
   - Assets/Main Menu.unity
   - Assets/Solo Play.unity
   - Assets/Duo Play.unity
-  playerPath: C:/Users/Sarunas/Desktop/Begikai/Begikai.exe
+  playerPath: C:/Users/Arvydas Norkunas/Desktop/aa/Begikai.exe

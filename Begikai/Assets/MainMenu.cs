@@ -26,4 +26,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Duo Play");
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }
