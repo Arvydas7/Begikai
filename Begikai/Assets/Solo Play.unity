@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 1902582966}
   - component: {fileID: 1902582965}
   - component: {fileID: 1902582964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +546,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.12286514}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -557,7 +557,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 4}
+  m_Size: {x: 8, y: 3.7542696}
   m_EdgeRadius: 0
 --- !u!212 &1902582965
 SpriteRenderer:
@@ -620,8 +620,8 @@ Transform:
   m_GameObject: {fileID: 1902582963}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -4.2, z: 0}
-  m_LocalScale: {x: 2.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -0.04, y: -4.1228, z: 0}
+  m_LocalScale: {x: 2.5, y: 0.5386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -818,6 +818,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 522015086}
+    - target: {fileID: 5415752821821015410, guid: 06fb677ee1055124bab6a22c72659465, type: 3}
+      propertyPath: isGrounded
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6406273054371735815, guid: 06fb677ee1055124bab6a22c72659465, type: 3}
       propertyPath: m_Name
       value: Player
