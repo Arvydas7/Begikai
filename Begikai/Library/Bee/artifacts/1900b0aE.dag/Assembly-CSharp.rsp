@@ -388,6 +388,7 @@
 "Assets/BackGroundScript.cs"
 "Assets/GameManager.cs"
 "Assets/MainMenu.cs"
+"Assets/PlayerCollision.cs"
 "Assets/PlayerMovement.cs"
 "Assets/Spawner.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

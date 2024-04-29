@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] public TextMeshProUGUI scoreUI;
+
+    private void OnGUI(){
+        scoreUI.text = betterScore();
+    }
+
     public static GameManager Instance;
 
     private void Awake(){
@@ -14,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     public float currentScore = 0f;
 
-    public bool isPlaying = false;
+    public bool isPlaying = true;
 
     private void Update(){
         if(isPlaying){
@@ -22,12 +29,13 @@ public class GameManager : MonoBehaviour
             Debug.Log("" + currentScore);
         }
     }
-
+    
     public void GameOver(){
         currentScore = 0;
+        isPlaying = false;
     }
 
     public string betterScore (){
-        return Mathf.RoundToInt(currentScore).ToString();
+        return "Score:" + Mathf.RoundToInt(currentScore).ToString();
     }
 }

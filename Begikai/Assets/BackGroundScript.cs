@@ -17,6 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
    
     void Update()
     {
+        Speed = GameManager.Instance.currentScore/10f;
         offset += (Time.deltaTime * Speed) / 10f;
         mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
     }
