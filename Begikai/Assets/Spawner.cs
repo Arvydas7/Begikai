@@ -12,9 +12,17 @@ public class Spawner : MonoBehaviour
     public float obstacleSpeedMulti = 10f;
 
     private float timeUntilObsSpawn;
-    private void Update(){
-        if (GameManager.Instance.isPlaying){
-            SpawnLoop();   
+    //private void Update(){
+    //    if (GameManager.Instance.isPlaying){
+    //        SpawnLoop();   
+    //    }
+    //}
+
+    private void Update()
+    {
+        if (GameManager.Instance != null && GameManager.Instance.isPlaying)
+        {
+            SpawnLoop();
         }
     }
 

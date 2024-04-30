@@ -14,11 +14,21 @@ public class NewBehaviourScript : MonoBehaviour
         mat = GetComponent<Renderer>().material;
     }
 
-   
+
+    //void Update()
+    //{
+    //    Speed = GameManager.Instance.currentScore/10f;
+    //    offset += (Time.deltaTime * Speed) / 10f;
+    //    mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+    //}
     void Update()
     {
-        Speed = GameManager.Instance.currentScore/10f;
-        offset += (Time.deltaTime * Speed) / 10f;
-        mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+        if (GameManager.Instance != null)
+        {
+            Speed = GameManager.Instance.currentScore / 10f;
+            offset += (Time.deltaTime * Speed) / 10f;
+            mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+        }
     }
+
 }
