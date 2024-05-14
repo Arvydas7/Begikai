@@ -71,6 +71,7 @@ public class SubmitScript : MonoBehaviour
 
     public void SubmitScore1()
     {
+        //UnityEngine.Debug.LogError("SUBMIT1!");
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         HighscoreTable.Highscores highscores = JsonUtility.FromJson<HighscoreTable.Highscores>(jsonString);
 

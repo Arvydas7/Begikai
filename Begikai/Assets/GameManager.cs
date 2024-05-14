@@ -7,6 +7,8 @@ using System.Diagnostics;
 public class GameManager : MonoBehaviour
 {
     public GameOverScript GameOverScript;
+    public SubmitScript Submit;
+    int savedScore;
     [SerializeField] public TextMeshProUGUI scoreUI;
 
     private bool isGameOver = false;
@@ -45,15 +47,24 @@ public class GameManager : MonoBehaviour
         if (!isGameOver)
         {
             GameOverScript.Setup(betterScore());
+            savedScore = betterScore1();
+            
             currentScore = 0;
+            Submit.SubmitScore(savedScore);
             isPlaying = false;
             isGameOver = true;
+            //Submit.SubmitScore(savedScore);
         }
     }
 
     public string betterScore()
     {
         return "Score:" + Mathf.RoundToInt(currentScore).ToString();
+    }
+
+    public int betterScore1()
+    {
+        return  Mathf.RoundToInt(currentScore);
     }
 }
 
