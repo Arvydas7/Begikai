@@ -44,5 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a10fd6178a533746b2e5adbb9a68e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScore: 0
+  GameOverScript: {fileID: 0}
+  Submit: {fileID: 0}
+  scoreUI: {fileID: 0}
+  currentScore: 90
   isPlaying: 1
