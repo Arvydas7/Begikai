@@ -9,37 +9,32 @@ public class SubmitScript : MonoBehaviour
 
     private int savedScore;
 
-    //public void SubmitScore(int score)
-    //{
-    //    string jsonString = PlayerPrefs.GetString("highscoreTable");
-    //    highscoreTable.Highscores highscores = JsonUtility.FromJson<highscoreTable.Highscores>(jsonString);
-    //    highscoreTable.highscoreEntryList = highscoreTable.highscores.highscoreEntryList;
-
-    //    for (int i = 0; i < highscoreTable.highscores.highscoreEntryList.Count; i++)
-    //    {
-    //        for (int j = i + 1; j < highscoreTable.highscores.highscoreEntryList.Count; j++)
-    //        {
-    //            if (highscoreTable.highscores.highscoreEntryList[j].score > highscoreTable.highscores.highscoreEntryList[i].score)
-    //            {
-    //                highscoreTable.HighscoreEntry tmp = highscoreTable.highscores.highscoreEntryList[i];
-    //                highscoreTable.highscores.highscoreEntryList[i] = highscoreTable.highscores.highscoreEntryList[j];
-    //                highscoreTable.highscores.highscoreEntryList[j] = tmp;
-    //            }
-    //        }
-    //    }
-    //    if (highscoreTable.IsHighscore(score))
-    //    {
-    //        gameObject.SetActive(true);
-    //        savedScore = score;
-    //    }
-    //}
-
     public void SubmitScore(int score)
     {
         string jsonString = PlayerPrefs.GetString("highscoreTable");
+
+        // Check if the jsonString is empty or null
+        if (string.IsNullOrEmpty(jsonString))
+        {
+            jsonString = "{\"highscoreEntryList\":[]}";
+        }
+
         HighscoreTable.Highscores highscores = JsonUtility.FromJson<HighscoreTable.Highscores>(jsonString);
 
+        // Check if highscores is null
+        if (highscores == null)
+        {
+            highscores = new HighscoreTable.Highscores();
+            highscores.highscoreEntryList = new List<HighscoreTable.HighscoreEntry>();
+        }
+
         List<HighscoreTable.HighscoreEntry> highscoreEntryList = highscores.highscoreEntryList;
+
+        // Check if highscoreEntryList is null
+        if (highscoreEntryList == null)
+        {
+            highscoreEntryList = new List<HighscoreTable.HighscoreEntry>();
+        }
 
         for (int i = 0; i < highscoreEntryList.Count; i++)
         {
@@ -68,14 +63,29 @@ public class SubmitScript : MonoBehaviour
         }
     }
 
-
     public void SubmitScore1()
     {
-        //UnityEngine.Debug.LogError("SUBMIT1!");
         string jsonString = PlayerPrefs.GetString("highscoreTable");
+
+        if (string.IsNullOrEmpty(jsonString))
+        {
+            jsonString = "{\"highscoreEntryList\":[]}";
+        }
+
         HighscoreTable.Highscores highscores = JsonUtility.FromJson<HighscoreTable.Highscores>(jsonString);
 
+        if (highscores == null)
+        {
+            highscores = new HighscoreTable.Highscores();
+            highscores.highscoreEntryList = new List<HighscoreTable.HighscoreEntry>();
+        }
+
         List<HighscoreTable.HighscoreEntry> highscoreEntryList = highscores.highscoreEntryList;
+
+        if (highscoreEntryList == null)
+        {
+            highscoreEntryList = new List<HighscoreTable.HighscoreEntry>();
+        }
 
         for (int i = 0; i < highscoreEntryList.Count; i++)
         {
@@ -95,12 +105,8 @@ public class SubmitScript : MonoBehaviour
         UpdateUI();
     }
 
-
     private void UpdateUI()
     {
         gameObject.SetActive(false);
-        //highscoreTable.Awake();
-        //highscoreTable.UpdateHighscoreUI();
     }
 }
-

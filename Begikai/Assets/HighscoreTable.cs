@@ -38,7 +38,7 @@ public class HighscoreTable : MonoBehaviour
 {
     [SerializeField] private InputField nameInputField;
     //[SerializeField] private GameOverScript gameOverScript;
-    
+
 
     private Transform entryContainer;
     private Transform entryTemplate;
@@ -87,9 +87,9 @@ public class HighscoreTable : MonoBehaviour
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
         highscoreEntryList = highscores.highscoreEntryList;
 
-        for (int i = 0; i< highscores.highscoreEntryList.Count; i++)
+        for (int i = 0; i < highscores.highscoreEntryList.Count; i++)
         {
-            for(int j = i+1; j< highscores.highscoreEntryList.Count; j++)
+            for (int j = i + 1; j < highscores.highscoreEntryList.Count; j++)
             {
                 if (highscores.highscoreEntryList[j].score > highscores.highscoreEntryList[i].score)
                 {
@@ -108,7 +108,7 @@ public class HighscoreTable : MonoBehaviour
             CreateHighscoreEntryTransform(highscoreEntryList[i], entryContainer, highscoreEntryTransformList);
         }
 
-        
+
 
     }
 
