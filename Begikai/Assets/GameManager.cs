@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public TextMeshProUGUI scoreUI;
 
     private bool isGameOver = false;
+    public bool isDuo = false;
 
     private void OnGUI()
     {
@@ -47,9 +48,12 @@ public class GameManager : MonoBehaviour
         {
             GameOverScript.Setup(betterScore());
             savedScore = betterScore1();
-            
+
             currentScore = 0;
-            Submit.SubmitScore(savedScore);
+            if (!isDuo)
+            {
+                Submit.SubmitScore(savedScore);
+            }
             isPlaying = false;
             isGameOver = true;
             //Submit.SubmitScore(savedScore);
