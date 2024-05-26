@@ -26,6 +26,12 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Duo Play");
     }
+
+    public void PlaySecret()
+    {
+        SceneManager.LoadSceneAsync("Secret Mode");
+    }
+
     public void ExitGame()
     {
         Application.Quit();

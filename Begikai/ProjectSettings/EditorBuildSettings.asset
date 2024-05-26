@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Duo Play.unity
     guid: d19ebd05839b665408f3d76e830f2aef
+  - enabled: 1
+    path: Assets/Secret Mode.unity
+    guid: 38b2f96fff459d548889e2f56294ff37
   m_configObjects: {}

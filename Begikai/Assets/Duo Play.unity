@@ -2048,6 +2048,22 @@ PrefabInstance:
       propertyPath: obstacleSpawnTimeMulti
       value: 200000
       objectReference: {fileID: 0}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 5672282109019193108, guid: f088e41c2ff27b84ba96bd8dee698638, type: 3}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 678172060141483839, guid: d7e6ed95580afe5499e71ea7d67bd5f7, type: 3}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 5672282109019193108, guid: cd2b896ea0ec6004db14cdec3bc23c55, type: 3}
     - target: {fileID: 7174054967571399916, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
       propertyPath: m_Name
       value: Spawner (1)
@@ -2581,6 +2597,22 @@ PrefabInstance:
       propertyPath: obstacleSpawnTimeMulti
       value: 200000
       objectReference: {fileID: 0}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 5672282109019193108, guid: f088e41c2ff27b84ba96bd8dee698638, type: 3}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 678172060141483839, guid: d7e6ed95580afe5499e71ea7d67bd5f7, type: 3}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 5672282109019193108, guid: cd2b896ea0ec6004db14cdec3bc23c55, type: 3}
     - target: {fileID: 7174054967571399916, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
       propertyPath: m_Name
       value: Spawner

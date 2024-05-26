@@ -37,7 +37,6 @@ public class GameManager : MonoBehaviour
         if (isPlaying)
         {
             currentScore += Time.deltaTime;
-            UnityEngine.Debug.Log("" + currentScore);
 
         }
     }

@@ -1354,6 +1354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameInputField: {fileID: 2026627101}
+  highscoreEntryList: []
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,8 +3796,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5819502278872354642, guid: 192c610c2060f974fbe89b811e83b642, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7033271252392314115}
   m_SourcePrefab: {fileID: 100100000, guid: 192c610c2060f974fbe89b811e83b642, type: 3}
+--- !u!1 &7033271252392314114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5819502278872354642, guid: 192c610c2060f974fbe89b811e83b642, type: 3}
+  m_PrefabInstance: {fileID: 7033271252392314113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7033271252392314115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7033271252392314114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4678374355763448a9602ab65404757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameInputField: {fileID: 2026627101}
+  highscoreEntryList: []
 --- !u!1001 &7779242340537867545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3809,6 +3832,22 @@ PrefabInstance:
       propertyPath: obstacleSpawnTimeMulti
       value: 200000
       objectReference: {fileID: 0}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 5672282109019193108, guid: f088e41c2ff27b84ba96bd8dee698638, type: 3}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 678172060141483839, guid: d7e6ed95580afe5499e71ea7d67bd5f7, type: 3}
+    - target: {fileID: 2697833751447637734, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
+      propertyPath: obstaclePrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 5672282109019193108, guid: cd2b896ea0ec6004db14cdec3bc23c55, type: 3}
     - target: {fileID: 7174054967571399916, guid: 27c0a383f4d380d4fa33a2b8cbfa883b, type: 3}
       propertyPath: m_Name
       value: Spawner
